@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@300;700&display=swap');
+
+body{
+    margin: 0;
+    height: auto;
+    width: 100%;
+}
+
+#containerImg{
+    height: auto;
+    width: 100vw;
+}
+
+#imgLogin{
+    height: 99vh;
+    width: 60vw;
+}
+
+#containerLogin{
+    height: auto;
+    width: 100%;
+    padding: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: "Roboto";
+    text-align: left;
+}
+
+h1{
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+h2{
+    font-size: 30px;
+    margin-bottom: 80px;
+}
+
+#buttonsLoginBox{
+    margin-top: 100px;
+    width: 300px;
+}
+
+#buttonsRegisterBox{
+    width: 300px;
+}
+
+#buttonsRegisterBox p a{
+    text-decoration: none;
+}
+
+#buttonsRegisterBox p a:link, a:visited, a:hover, a:focus, a:active{
+    color: #1d9bf0;
+  }
+
+#registerButton{
+    border-radius: 9999px;
+    background-color: #1d9bf0;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#loginButton{
+    border-radius: 9999px;
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    color: #1d9bf0;
+    font-weight: bold;
+    cursor: pointer;
+}

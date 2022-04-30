@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@300;700&display=swap');
+
+body{
+    margin: 0;
+}
+
+#boxRegister{
+    border-radius: 16px;
+    width: 600px;
+    height: 650px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#backBox{
+    padding: 15px;
+    width: 30px;
+}
+
+#backButton{
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: bolder;
+    outline: none;
+}
+
+#backButton:hover{
+    padding: 0;
+    border: 1px solid;
+    background: none;
+    border-radius: 999px;
+}
+
+h1{
+    text-align: center;
+    font-family: "Roboto";
+    margin-bottom: 20px;
+}
+
+.formUser{
+    padding: 15px;
+    padding-left: 30px;
+    font-family: "Roboto";
+    font-size: 20px;
+    width: 300px;
+    font-weight: bold;
+    margin-left: 19%;
+}
+
+.formControl{
+    width:300px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+#buttonsRegisterBox{
+    width: 600px;
+    height: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#buttonsRegisterBox p a{
+    text-decoration: none;
+}
+
+#buttonsRegisterBox p a:link, a:visited, a:hover, a:focus, a:active{
+    color: #1d9bf0;
+  }
+
+#registerButton{
+    border-radius: 9999px;
+    background-color: #1d9bf0;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
