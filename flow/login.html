@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/login.css">
 </head>
-<body>
-    Chegou na pagina de login
+<body style="background-color: rgba(0, 0, 0, 0.4);">
+    <div id="boxRegister" style="display: flex; flex-direction: column;">
+
+        <div style="display: flex; flex-direction: row;">
+        <div id="backBox">
+            <button id="backButton" type="button">X</button>
+        </div>
+
+        <div id="imgLogoBox">
+            <img src="../imgs/logo.svg" class="logoImg" alt="logo borboleta">
+        </div>
+        </div>
+
+        <h1>Entre na sua conta do Twitok</h1>
+
+        <div class="formUser">
+        <label for="userUsername">Nome de usuário/Login</label><br>
+        <input id="userUsername" type="text" name="usernameForm:user" class="formControl" placeholder="Digite seu nome de usuário ou email"><br><br>
+        <label for="userSenha">Senha</label><br>
+        <input id="userSenha" type="password" name="senhaForm:user" class="formControl" placeholder="Digite sua senha"><br><br>
+        </div>
+
+        <div id="buttonsLoginBox">
+            <button id="loginButton" type="button">Entrar</button>
+            <p style="margin-top: 30px;">Não possui uma conta? <a href="../flow/register.html">Inscreva-se</a> </p>   
+        </div>
+
+        
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("backButton").onclick = function () {
+            location.href = "../index.html";
+        };
+    </script>
 </body>
 </html>
