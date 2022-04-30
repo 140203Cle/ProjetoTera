@@ -87,4 +87,9 @@ h1{
     color: white;
     font-weight: bold;
     cursor: pointer;
+    border: none;
+}
+
+#registerButton:hover{
+    background:#1a8cd8;
 }
