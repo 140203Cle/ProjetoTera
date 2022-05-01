@@ -62,21 +62,23 @@ h1{
     padding-left: 30px;
     font-family: "Roboto";
     font-size: 20px;
-    width: 300px;
+    width: 308px;
     font-weight: bold;
     margin-left: 19%;
 }
 
 .formControl{
-    width:300px;
+    width:292px;
     height: 40px;
     padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #buttonsRegisterBox{
-    width: 600px;
+    width: 300px;
     height: auto;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -102,4 +104,11 @@ h1{
 
 #registerButton:hover{
     background:#1a8cd8;
+}
+
+i{
+    margin-top: 22px;
+    height: 20px;
+    margin-left: -30px;
+    cursor: pointer;
 }

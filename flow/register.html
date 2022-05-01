@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body style="background-color: rgba(0, 0, 0, 0.4);">
     <div id="boxRegister" style="display: flex; flex-direction: column;">
@@ -23,14 +24,20 @@
         <h1>Crie sua conta do Twitok</h1>
 
         <div class="formUser">
-        <label for="userUsername">Nome de usuário</label><br>
-        <input id="userUsername" type="text" name="usernameForm:user" class="formControl" placeholder="Digite seu nome de usuário"><br><br>
-        <label for="userEmail">Email</label><br>
-        <input id="userEmail" type="text" name="emailForm:user" class="formControl" placeholder="Digite seu email"><br><br>
-        <label for="userPassword">Senha</label><br>
-        <input id="userPassword" type="password" name="passwordForm:user" class="formControl" placeholder="Digite sua senha">
-        <input type="password" name="passwordValidationForm:user" class="formControl" placeholder="Confirme sua senha" style="margin-top: 10px;">
-        </div>
+        <label for="userUsername">Nome de usuário</label>
+        <input id="userUsername" type="text" name="usernameForm:user" class="formControl" placeholder="Digite seu nome de usuário">
+        <label for="userEmail">Email</label>
+        <input id="userEmail" type="text" name="emailForm:user" class="formControl" placeholder="Digite seu email">
+        <label for="userPassword">Senha</label>
+            <div style="display: flex; flex-direction: row;">
+                <input id="userPassword" type="password" name="passwordForm:user" class="formControl" placeholder="Digite sua senha">
+                <i class="far fa-eye" id="togglePassword"></i>
+            </div>
+            
+            <div style="display: flex; flex-direction: row;">
+                 <input id="userValidationPassword" type="password" name="passwordValidationForm:user" class="formControl" placeholder="Confirme sua senha">
+                 <i class="far fa-eye" id="toggleValidationPassword"></i>
+            </div>
 
         <div id="buttonsRegisterBox">
             <button id="registerButton" type="button">Inscreva-se</button>
@@ -43,9 +50,28 @@
 
 
     <script type="text/javascript">
+
         document.getElementById("backButton").onclick = function () {
             location.href = "../index.html";
         };
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#userPassword');
+        const toggleValidationPasswor = document.querySelector('#toggleValidationPassword');
+        const passwordValidation = document.querySelector('#userValidationPassword');
+        
+        togglePassword.addEventListener('click', function (e) {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.classList.toggle('fa-eye-slash');
+        });
+
+        toggleValidationPasswor.addEventListener('click', function (e) {
+            const type = passwordValidation.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordValidation.setAttribute('type', type);
+            this.classList.toggle('fa-eye-slash');
+            });
+
+
     </script>
 </body>
 </html>

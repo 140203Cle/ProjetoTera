@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body style="background-color: rgba(0, 0, 0, 0.4);">
     <div id="boxRegister" style="display: flex; flex-direction: column;">
@@ -23,10 +24,15 @@
         <h1>Entre na sua conta do Twitok</h1>
 
         <div class="formUser">
-        <label for="userUsername">Nome de usuário/Login</label><br>
-        <input id="userUsername" type="text" name="usernameForm:user" class="formControl" placeholder="Digite seu nome de usuário ou email"><br><br>
-        <label for="userSenha">Senha</label><br>
-        <input id="userSenha" type="password" name="senhaForm:user" class="formControl" placeholder="Digite sua senha"><br><br>
+        <label for="userUsername">Nome de usuário/Login</label>
+        <input id="userUsername" type="text" name="usernameForm:user" class="formControl" placeholder="Digite seu nome de usuário ou email">
+        <label for="userSenha">Senha</label>
+            <div style="display: flex; flex-direction: row;">
+                <input id="userSenha" type="password" name="senhaForm:user" class="formControl" placeholder="Digite sua senha" >
+                <i class="far fa-eye" id="togglePassword"></i>
+            </div>
+        
+        
         </div>
 
         <div id="buttonsLoginBox">
@@ -40,9 +46,18 @@
     </div>
 
     <script type="text/javascript">
+
         document.getElementById("backButton").onclick = function () {
             location.href = "../index.html";
         };
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#userSenha');
+        
+        togglePassword.addEventListener('click', function (e) {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.classList.toggle('fa-eye-slash');
+        });
     </script>
 </body>
 </html>
