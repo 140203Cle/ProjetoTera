@@ -59,7 +59,7 @@
         </div>
 
         <div id="imgLogoBox">
-            <img src="../imgs/logo.svg" class="logoImg" alt="logo borboleta">
+            <img src="imgs/logo.svg" class="logoImg" alt="logo borboleta">
         </div>
         </div>
 
@@ -96,7 +96,7 @@
             </div>
     
             <div id="imgLogoBox">
-                <img src="../imgs/logo.svg" class="logoImg" alt="logo borboleta">
+                <img src="imgs/logo.svg" class="logoImg" alt="logo borboleta">
             </div>
             </div>
     
@@ -135,19 +135,17 @@
 
         document.getElementById("registerButtonHome").onclick = function () {
             modalRegister.style.display= "block";
-            bodyBc.style.opacity = "0.2";
         };
 
         document.getElementById("loginButtonHome").onclick = function () {
             modalLogin.style.display= "block";
-            bodyBc.style.opacity = "0.2";
         };
 
         document.getElementById("backButtonLogin").onclick = function () {
-            location.href = "../index.html";
+            modalLogin.style.display="none";
         };
         document.getElementById("backButton").onclick = function () {
-            location.href = "../index.html";
+            modalRegister.style.display="none";
         };
         document.getElementById("registerLoginLink").onclick = function () {
             modalLogin.style.display="none";
