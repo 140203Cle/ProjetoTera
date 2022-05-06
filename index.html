@@ -26,7 +26,7 @@
 </head>
 <body style="background-color: white;">
 
-     <div id="homePage" style= "display: flex; height: 100%; width: 100%; overflow: hidden;">
+     <div id="homePage" style= "display: flex; height: 100%; width: 100%;">
         <div id="containerImg">
             <img src="imgs/imglogin.png"  id="imgLogin" alt="imagem de login">
         </div>
@@ -38,11 +38,11 @@
                 <h1>Fique por dentro de tudo que está acontecendo no mundo</h1>
                 <h2>Inscreva-se no Twitok agora mesmo.</h2>
             </div>
-            <div id="buttonsRegisterBox">
+            <div id="buttonsRegisterBoxHome">
                 <button id="registerButtonHome" type="button">Inscreva-se</button>
                 <p style="font-size: 11px;">Ao se inscrever, você concorda com os <a href="">Termos de Serviço</a> e a <a href="">Política de Privacidade</a>, incluindo o <a href="">Uso de Cookies</a>.</p>
             </div>
-            <div id="buttonsLoginBox">
+            <div id="buttonsLoginBoxHome">
                 <p style="font-size:larger;"><b>Já tem uma conta?</b></p>
                 <button id="loginButtonHome" type="button">Entrar</button>
             </div>
@@ -51,19 +51,19 @@
 
     
     <div id="modalLogin" style="display: none;">
-        <div id="boxLogin" style="flex-direction: column;">
+        <div class="boxModal" style="flex-direction: column;">
 
         <div style="display: flex; flex-direction: row;">
-        <div id="backBox">
-            <button id="backButtonLogin" type="button">X</button>
+        <div class="backBox">
+            <button id="backButtonLogin" class="backButton" type="button">X</button>
         </div>
 
-        <div id="imgLogoBox">
+        <div class = "imgLogoBox">
             <img src="imgs/logo.svg" class="logoImg" alt="logo borboleta">
         </div>
         </div>
 
-        <h1>Entre na sua conta do Twitok</h1>
+        <p>Entre na sua conta do <br> Twitok</p>
 
         <div class="formUser">
         <label for="userUsername">Nome de usuário/Login</label>
@@ -79,7 +79,7 @@
 
         <div id="buttonsLoginBox">
             <button id="loginButton" type="button">Entrar</button>
-            <p style="margin-top: 30px;">Não possui uma conta? <a href="#" id="registerLoginLink">Inscreva-se</a> </p>   
+            <p style="margin-top: 30px; font-size: 20px;">Não possui uma conta? <a href="#" id="registerLoginLink">Inscreva-se</a> </p>   
         </div>
 
         
@@ -88,19 +88,19 @@
     </div>
 
     <div id="modalRegister" style="display: none;">
-        <div id="boxRegister" style=" flex-direction: column;">
+        <div class="boxModal" style=" flex-direction: column;">
 
             <div style="display: flex; flex-direction: row;">
-            <div id="backBox">
-                <button id="backButton" type="button">X</button>
+            <div class="backBox">
+                <button id="backButtonRegister" class ="backButton" type="button">X</button>
             </div>
     
-            <div id="imgLogoBox">
+            <div class = "imgLogoBox">
                 <img src="imgs/logo.svg" class="logoImg" alt="logo borboleta">
             </div>
             </div>
     
-            <h1>Crie sua conta do Twitok</h1>
+            <p>Crie sua conta do Twitok</p>
     
             <div class="formUser">
             <label for="userUsername">Nome de usuário</label>
@@ -144,7 +144,7 @@
         document.getElementById("backButtonLogin").onclick = function () {
             modalLogin.style.display="none";
         };
-        document.getElementById("backButton").onclick = function () {
+        document.getElementById("backButtonRegister").onclick = function () {
             modalRegister.style.display="none";
         };
         document.getElementById("registerLoginLink").onclick = function () {
