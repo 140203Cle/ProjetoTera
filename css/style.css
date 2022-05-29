@@ -93,6 +93,12 @@ h2{
     #containerImg{
     display: none;
     }
+    .buttonsCenter{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 }
 
 #modalRegister{

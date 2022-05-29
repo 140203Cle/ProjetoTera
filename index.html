@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,28 +11,32 @@
 </head>
 <body style="background-color: white;">
 
-     <div id="homePage" style= "display: flex; height: 100%; width: 100%;">
-        <div id="containerImg">
-            <img src="imgs/imglogin.png"  id="imgLogin" alt="imagem de login">
+    <main>
+        <div id="homePage" style= "display: flex; height: 100%; width: 100%;">
+            <div id="containerImg">
+                <img src="imgs/imglogin.png"  id="imgLogin" alt="imagem de login">
+            </div>
+            <div id="containerLogin" style="display: flex; flex-direction: column;">
+                <div>
+                    <img src="imgs/logo.svg" class="logoImg" alt="logo borboleta">
+                </div>
+                <div>
+                    <h1>Fique por dentro de tudo que está acontecendo no mundo</h1>
+                    <h2>Inscreva-se no Twitok agora mesmo.</h2>
+                </div>
+                <div class="buttonsCenter">
+                <div id="buttonsRegisterBoxHome">
+                    <button id="registerButtonHome" type="button">Inscreva-se</button>
+                    <p style="font-size: 11px;">Ao se inscrever, você concorda com os <a href="">Termos de Serviço</a> e a <a href="">Política de Privacidade</a>, incluindo o <a href="">Uso de Cookies</a>.</p>
+                </div>
+                <div id="buttonsLoginBoxHome">
+                    <p style="font-size:larger;"><b>Já tem uma conta?</b></p>
+                    <button id="loginButtonHome" type="button">Entrar</button>
+                </div>
+                </div>
+            </div>
         </div>
-        <div id="containerLogin" style="display: flex; flex-direction: column;">
-            <div>
-                <img src="imgs/logo.svg" class="logoImg" alt="logo borboleta">
-            </div>
-            <div>
-                <h1>Fique por dentro de tudo que está acontecendo no mundo</h1>
-                <h2>Inscreva-se no Twitok agora mesmo.</h2>
-            </div>
-            <div id="buttonsRegisterBoxHome">
-                <button id="registerButtonHome" type="button">Inscreva-se</button>
-                <p style="font-size: 11px;">Ao se inscrever, você concorda com os <a href="">Termos de Serviço</a> e a <a href="">Política de Privacidade</a>, incluindo o <a href="">Uso de Cookies</a>.</p>
-            </div>
-            <div id="buttonsLoginBoxHome">
-                <p style="font-size:larger;"><b>Já tem uma conta?</b></p>
-                <button id="loginButtonHome" type="button">Entrar</button>
-            </div>
-        </div>
-    </div>
+    </main>
 
     
     <div id="modalLogin" style="display: none;">
@@ -71,6 +75,8 @@
         </div>
 
     </div>
+
+    <!-- #region --> 
 
     <div id="modalRegister" style="display: none;">
         <div class="boxModal" style=" flex-direction: column;">
